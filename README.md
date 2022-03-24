@@ -11,4 +11,4 @@
 ![Image]("add link")
 
 
-[Link](https://trello.com/b/M47eArYK/full-stackathon)
+[Trello Board](https://trello.com/b/M47eArYK/full-stackathon)
