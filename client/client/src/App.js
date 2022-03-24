@@ -1,10 +1,23 @@
 import './App.css';
 import foodsData from './data/foods'
 import Menu from './components/Menu';
+import axios from 'axios'
+import { useState, useEffect } from 'react'
+const BASE_URL = 'http://localhost:3001/api'
+
 
 function App() {
 
-  const foods = foodsData
+  useEffect(() => {
+    async function getFoods() {
+      const res = await axios.get(`${BASE_URL}/foods`)
+      console.log(res.data)
+    }
+    getFoods()
+  })
+
+  let foods = foodsData
+
 
   return (
     <div className="App">
