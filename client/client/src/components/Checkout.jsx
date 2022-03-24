@@ -1,10 +1,12 @@
 import React from 'react'
 import './menu.css'
 
-const Checkout = () => {
+const Checkout = (props) => {
+
+ 
   return (
     <div>
-        <footer>Total={ calc.total }</footer>
+        
     </div>
   )
 }
