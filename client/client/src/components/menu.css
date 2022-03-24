@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 header {
-    position: center;
+    text-align: center;
+    position: relative;
     background-color: cornflowerblue;
     display: flex;
     padding: 10px;
@@ -26,33 +27,20 @@ img {
     display: block;
     margin-left: 10px; 
 }
-/* img #HamburgerWithCheese {
-    max-width: 30%;
-    height: auto;
-    padding: 5px;
-    position: left;
-    margin-left: 0; 
-}
-img #Hotdog {
-    max-width: 30%;
-    height: auto;
-    padding: 5px;
-    position: left;
-    margin-left: 0; 
-} */
-p {
+h2 {
     position: left;
     padding: 5px;
     margin-left: 0px;
 }
-.btn plus{
+p {
+    flex-wrap: wrap;
+    position: left;
+    padding: 5px;
+    margin-left: 0px;
+}
+.btn {
     position: right;
     margin-right: 10px;
-    size: 10%;
-}
-.btn minus{
-    position: right;
-    margin-right: 25px;
     size: 10%;
 }
 footer {
