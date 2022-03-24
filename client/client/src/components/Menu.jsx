@@ -1,13 +1,47 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './menu.css'
+import Checkout from './Checkout'
 
 const Menu = (props) => {
+
+  // let total = 0
+
+  // const calcTotal = (food) => {
+  //   total += {food.price}
+  // }
+
+  // const [total, setTotal] = useState(0)
+
+  // const addToTotal = (food.price) => {
+
+  //   setTotal(total += {parseInt(food.price)})
+
+  // }
+  let total = 0
+
+  const addToTotal = (price) => {
+    total += price
+    console.log(total);
+  }
+
+  const subFromTotal = (price) => {
+    total -= price
+    console.log(total)
+  }
+
   return (
     <div>
-      <header>Menu</header>
+      <h2>Menu</h2>
          <div>
-        {
-          props.foods.map((food) => (
+        
+            <div key={food.id}>
+              <img style={{width: '200px'}} src={ food.img } />
+              <h2>{ food.name }</h2>
+              <p>{ food.description }</p>
+              <button onClick={() => addToTotal(food.price)} className='btn'>+</button>
+              <p>${ food.price }</p>
+              <button onClick={() => subFromTotal(food.price)} className='btn'>-</button>
+            </div>
             <div>
               <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Hamburger_%28black_bg%29.jpg" alt="1" />
               <h2>HamBurger</h2>
@@ -30,6 +64,8 @@ const Menu = (props) => {
             </div>
           }
         </div>
+
+        <Checkout total={total} />
     </div>
   )
 }
