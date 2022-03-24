@@ -17,19 +17,12 @@ const Menu = () => {
     console.log(total)
   }
 
+
   return (
     <div>
       <h2>Menu</h2>
          <div>
         
-            {/* <div key={food.id}>
-              <img style={{width: '200px'}} src={ food.img } />
-              <h2>{ food.name }</h2>
-              <p>{ food.description }</p>
-              <button onClick={() => addToTotal(food.price)} className='btn'>+</button>
-              <p>${ food.price }</p>
-              <button onClick={() => subFromTotal(food.price)} className='btn'>-</button>
-            </div> */}
             <div>
               <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Hamburger_%28black_bg%29.jpg" alt="1" />
               <h2>HamBurger</h2>
