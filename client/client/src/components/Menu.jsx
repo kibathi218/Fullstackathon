@@ -4,15 +4,18 @@ import Checkout from './Checkout'
 
 const Menu = (props) => {
 
-  let total = 0
-
+  let [total, setTotal] = useState(0)
+ 
   const addToTotal = (price) => {
-    total += price
+    setTotal(total += price)
     console.log(total);
   }
 
   const subFromTotal = (price) => {
-    total -= price
+    if (total === 0) {
+      <></>
+    } else
+    setTotal(total -= price)
     console.log(total)
   }
 
@@ -28,8 +31,10 @@ const Menu = (props) => {
               <button onClick={() => addToTotal(food.price)} className='btn'>+</button>
               <p>${ food.price }</p>
               <button onClick={() => subFromTotal(food.price)} className='btn'>-</button>
+              
         </div> ))}
         </div>
+
 
         <Checkout total={total} />
     </div>
