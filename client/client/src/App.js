@@ -16,7 +16,7 @@ function App() {
     getFoods()
   })
 
-  let foods = foodsData
+  const foods = foodsData
 
 
   return (
