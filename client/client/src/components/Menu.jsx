@@ -22,6 +22,7 @@ const Menu = () => {
     <div>
       <h2>Menu</h2>
          <div>
+<<<<<<< HEAD
         
             <div>
               <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Hamburger_%28black_bg%29.jpg" alt="1" />
@@ -44,6 +45,17 @@ const Menu = () => {
               <p>Beef and Pork hotdog, with ketchup and mustard, in a hotdog bun.</p>
             </div>
           }
+=======
+        { props.foods.map((food) => (        
+            <div key={food.id}>
+              <img style={{width: '200px'}} src={ food.img } />
+              <h2>{ food.name }</h2>
+              <p>{ food.description }</p>
+              <button onClick={() => addToTotal(food.price)} className='btn'>+</button>
+              <p>${ food.price }</p>
+              <button onClick={() => subFromTotal(food.price)} className='btn'>-</button>
+            </div> 
+>>>>>>> ae623770151e99899a74dc2a63ff021c6cb72d75
         </div>
 
         <Checkout total={total} />
