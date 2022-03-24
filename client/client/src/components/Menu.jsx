@@ -1,13 +1,15 @@
 import React from 'react'
+import './menu.css'
 
 const Menu = (props) => {
   return (
     <div>
-      <div>
+      <header>Menu</header>
+         <div>
         {
           props.foods.map((food) => (
             <div>
-              <img src={food.img} />
+              <img src={ food.img } />
               <h2>{ food.name }</h2>
               <p>{ food.description }</p>
               

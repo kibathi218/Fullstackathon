@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header {
+background-color: grey;
+display: flex;
+padding: 0 20px;
+height: 50px;
+justify-content: space-between;
+}
+body {
+    background-color: goldenrod;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ul {
+    list-style: none;
+    height: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+div img {
+    padding: 5px;
+    position: left;
+    margin-left: 10px;
+    size: 2px;
+}
+p {
+    padding: 5px;
+    margin-left: 10px;
+}
+.btn plus{
+    position: right;
+    margin-right: 10px;
+    size: 10%;
+}
+.btn minus{
+    position: right;
+    margin-right: 25px;
+    size: 10%;
+}
+footer {
+    postion: relative;
+}
