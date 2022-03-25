@@ -21,9 +21,9 @@ const Menu = (props) => {
 
   return (
     <div>
-      <header>
+      {/* <header>
       <h2>Menu</h2>
-      </header>
+      </header> */}
          <div>
         { props.foods.map((food) => (        
             <div key={food.id}>
