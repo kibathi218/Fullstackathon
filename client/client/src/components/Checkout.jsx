@@ -5,7 +5,7 @@ const Checkout = (props) => {
 
  
   return (
-    <div>
+    <div className='footer'>
         <h2>Total: { props.total }</h2>
     </div>
   )
