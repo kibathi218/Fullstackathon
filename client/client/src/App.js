@@ -3,7 +3,10 @@ import './App.css';
 import Menu from './components/Menu';
 import axios from 'axios'
 import { useState, useEffect } from 'react'
+import { Routes, Route } from 'react-router-dom'
+import Nav from './components/Nav';
 const BASE_URL = 'http://localhost:3001/api'
+
 
 
 function App() {
@@ -24,10 +27,16 @@ function App() {
 
   return (
     <div className="App">
-      <Menu
+      <header>
+        <Nav />
+      </header>
+      <Routes>
+        <Route path='/' element={ <Menu foods= { food } />} />
+      </Routes>
+      {/* <Menu
         key={ food.id } 
         foods={ food }
-      />
+      /> */}
     </div>
   );
 }
