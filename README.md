@@ -9,7 +9,7 @@
 ## Description:<br /> 
 ### Our consession stand web application allows users to browse through our theme park menu and add items to their cart. With the help of React, users are able to see their total change in real time at the bottom of the page. This functionality also works when removing items from your cart. The information for our menu items are stored in our database and displayed using an API. <br /> <br /> 
 
-![Image]("add link") <br /><br />
+![image](https://png.pngtree.com/png-vector/20190130/ourlarge/pngtree-cute-minimalist-creative-cartoon-hamburger-png-image_611163.jpg) <br /><br />
 
 ## How You Can Contribute:<br /> 
 * Fork and Clone
