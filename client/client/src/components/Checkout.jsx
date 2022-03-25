@@ -6,7 +6,7 @@ const Checkout = (props) => {
  
   return (
     <div className='footer'>
-        <h2>Total: { props.total }</h2>
+        <h2>Total: ${ props.total }</h2>
     </div>
   )
 }

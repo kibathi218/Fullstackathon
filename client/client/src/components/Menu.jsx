@@ -12,8 +12,8 @@ const Menu = (props) => {
   }
 
   const subFromTotal = (price) => {
-    if (total === 0) {
-      <></>
+    if (total-price < 0) {
+      console.log("error");
     } else
     setTotal(total -= price)
     console.log(total)
