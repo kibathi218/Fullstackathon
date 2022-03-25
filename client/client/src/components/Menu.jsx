@@ -27,7 +27,7 @@ const Menu = (props) => {
          <div>
         { props.foods.map((food) => (        
             <div key={food.id}>
-              <img style={{width: '200px'}} src={ food.img } />
+              <img style={{width: '200px'}} src={ food.image } />
               <h2>{ food.name }</h2>
               <p>{ food.description }</p>
               <button onClick={() => addToTotal(food.price)} className='btn'>+</button>
